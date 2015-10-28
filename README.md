@@ -1,3 +1,2 @@
 # SICP
-Here are exercise from glorious book - SICP on Lisp(Scheme).
-1
+Here are my  exercise from glorious book - SICP on Lisp(Scheme).
