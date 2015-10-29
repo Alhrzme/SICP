@@ -1,0 +1,10 @@
+(define (double x)(+ x x))
+
+(define (halve x) (/ x 2))
+
+(define (multip x counter)
+  (cond ((= counter 0) x)
+        ((= counter 1) x)
+        ((=(remainder counter 2) 0) (multip (double x) (halve counter)))
+        (else (+ x (multip x (- counter 1))))))
+
