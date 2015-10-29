@@ -1,0 +1,13 @@
+(define (expon x counter)
+  (exponen x counter 1))
+
+(define (exponen x counter a)
+  (cond ((= counter 0) a)
+        ((= (remainder counter 2) 0) (exponen (* x x)
+                                              (/ counter 2)
+                                              a))
+        (else (exponen x
+                       (- counter 1)
+                       (* a x)))))
+                                              
+  
